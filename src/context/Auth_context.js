@@ -7,6 +7,7 @@ import { auth } from '../Firebase_config';
 
 const AuthContext = createContext()
 const AuthContextProvider = ({ children }) => {
+	// const [user, setuser] = useState()
 	const [QRstate, setQRstate] = useState("");
 	const navigate = useNavigate()
 
@@ -15,7 +16,9 @@ const AuthContextProvider = ({ children }) => {
 			.then((userCredential) => {
 				// Signed in 
 				const user = userCredential.user;
+				// setuser(user)
 				console.log(user)
+				console.log(user.uid)
 				// ...
 			}).then(() => {
 				alert("account created sucessfully")
@@ -50,7 +53,6 @@ const AuthContextProvider = ({ children }) => {
 		let currentDay = currentDate.getDate()
 		let month = currentDate.getMonth() + 1
 		let year = currentDate.getFullYear()
-
 		let finalDate = `${currentDay}-${month}-${year}`
 		let obj = {
 
@@ -59,6 +61,8 @@ const AuthContextProvider = ({ children }) => {
 		}
 		let QRstatefinal = JSON.stringify(obj)
 		setQRstate(QRstatefinal)
+		console.log(QRstatefinal)
+
 
 	};
 

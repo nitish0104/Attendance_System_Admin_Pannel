@@ -7,7 +7,7 @@ import { UserAuth } from "../context/Auth_context";
 import QRCode from "react-qr-code";
 
 const Main = () => {
-  const { generateqrcode, QRstate } = UserAuth();
+  const { generateqrcode, QRstate, user } = UserAuth();
   const initialstate = {
     tname: "",
     subname: "",
@@ -58,7 +58,7 @@ const Main = () => {
             onChange={handlechange}
           ></Input>
           <button
-            onClick={() => generateqrcode(formstate)}
+            onClick={() => generateqrcode(formstate, user)}
             type="button"
             className="bg-purple-500 px-4 py-2 rounded-lg hover:bg-purple-600"
           >
