@@ -2,7 +2,7 @@ import Input from "../components/Input";
 import React, { useState } from "react";
 import Layout from "../components/Layout";
 import Select from "../components/Select";
-import { option_department, option_year } from "../components/Data";
+import { option_department, option_year, subjects } from "../components/Data";
 import { UserAuth } from "../context/Auth_context";
 import QRCode from "react-qr-code";
 
@@ -49,14 +49,21 @@ const Main = () => {
             options={option_year}
             onChange={handlechange}
           ></Select>
-          <Input
+          <Select
+            id="subname"
+            label="Subject Name:"
+            value={formstate.subname}
+            options={subjects}
+            onChange={handlechange}
+          ></Select>
+          {/* <Input
             label="Subject Name:"
             value={formstate.subname}
             id="subname"
             placeholder="Enter Your Subject"
             type="text"
             onChange={handlechange}
-          ></Input>
+          ></Input> */}
           <button
             onClick={() => generateqrcode(formstate, user)}
             type="button"

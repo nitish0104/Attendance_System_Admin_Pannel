@@ -46,5 +46,55 @@ const option_year = [
 		value: "4",
 		label: "Forth Year"
 	}
+
+
+
 ]
-export { option_department, option_year }
+
+const subjects = [
+	{
+		value:"",
+		label:"Select subject"
+	},
+	{
+		value:"EP1",
+		label:"Eng Phy1"
+	},
+	{
+		value:"EC1",
+		label:"Eng Chem1"
+	},
+	{
+		value:"EM1",
+		label:"Eng Math1"
+	},
+	{
+		value:"Bee",
+		label:"Basic Elec Eng"
+	},
+	{
+		value:"Mech",
+		label:"Eng Mech"
+	},
+	{
+		value:"Ed",
+		label:"Eng Draw"
+	},
+	{
+		value:"Em2",
+		label:"Eng Math2"
+	},
+	{
+		value:"C",
+		label:"C lng"
+	},
+	{
+		value:"Ep2",
+		label:"Eng Phy2"
+	},
+	{
+		value:"Ec2",
+		label:"Eng Chem2"
+	},
+]
+export { option_department, option_year,subjects }
