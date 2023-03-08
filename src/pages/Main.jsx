@@ -56,14 +56,7 @@ const Main = () => {
             options={subjects}
             onChange={handlechange}
           ></Select>
-          {/* <Input
-            label="Subject Name:"
-            value={formstate.subname}
-            id="subname"
-            placeholder="Enter Your Subject"
-            type="text"
-            onChange={handlechange}
-          ></Input> */}
+          
           <button
             onClick={() => generateqrcode(formstate, user)}
             type="button"

@@ -42,7 +42,7 @@ const Login = () => {
             />
             <div className="flex gap-8">
               <span>Dosen't have a account?</span>
-              <Link to="/signup" className="text-blue-900">
+              <Link to="/" className="text-blue-900">
                 Create Here
               </Link>
             </div>

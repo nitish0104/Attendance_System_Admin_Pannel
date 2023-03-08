@@ -70,10 +70,12 @@ const AuthContextProvider = ({ children }) => {
 		let month = currentDate.getMonth() + 1
 		let year = currentDate.getFullYear()
 		let finalDate = `${currentDay}-${month}-${year}`
+		
 		let obj = {
-			uid: user.uid,
+			AdminUID: user.uid,
 			...fromstate,
-			date: finalDate
+			date: finalDate,
+			time: currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.setSeconds()
 		}
 		let QRstatefinal = JSON.stringify(obj)
 		setQRstate(QRstatefinal)
