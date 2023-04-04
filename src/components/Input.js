@@ -2,7 +2,7 @@ import React from 'react'
 
 const input = ({ label, type, placeholder, value, onChange, id }) => {
 	return (
-		<div className='flex flex-col w-[50%]'>
+		<div className='flex flex-col '>
 
 			<label className=' font-bold'>{label}
 			</label>

@@ -23,10 +23,10 @@ const Signup = () => {
   return (
     <div>
       <Layout>
-        <div className="w-[50%] h-[80%] bg-white m-auto rounded-md flex flex-col justify-center items-center gap-2	p-6">
-          <p className="text-5xl font-semibold">Admin Pannel</p>
-          <form action="">
-            <h1 className="text-black text-3xl font-semibold text-center">
+        <div className="md:w-[50%] md:h-[80%] h-[60vh] w-[80vw] bg-white m-auto rounded-md flex flex-col justify-center items-center gap-2 gap-y-10	">
+          
+          <form action="" className="flex flex-col justify-center items-center gap-y-5">
+            <h1 className="text-black text-xl font-semibold text-center">
               Create Admin Account
             </h1>
             <Input
